@@ -13,5 +13,7 @@ img{
 }
 button
 {
+  color:aqua;
   font-size: large;
+  font-weight: bold;
 }
