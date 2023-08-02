@@ -41,7 +41,7 @@ setInterval(function() {Run()}, 300);
 function checkPageBounds(direction, imgWidth, pos, pageWidth) {
   pageWidth = window.innerWidth;
         if (direction == 0 && pos + imgWidth > pageWidth) direction = 1;
-        if (direction == 1 && pos < 600)direction = 0;
+        if (direction == 1 && pos < 650)direction = 0;
   
   // TODO: Complete this to reverse direction upon hitting screen edge
   //
