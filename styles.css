@@ -1,20 +1,34 @@
 h1{
-  
   color:red;
   background:lightblue;
-  
 }
 #mypic{
-  
   border:solid grey 3px;
   border-radius:50px;
   padding:50PX 50PX 50PX 50PX;
-  
 }
-button
-{
+
+
+button{
   color:aqua;
   font-size: x-large;
   font-weight: bold;
   background:darkred;
 }
+
+#area {
+    position: fixed;
+    background-color: #f0f0f0;
+    margin: 1em auto;
+    top: 200px;
+    left: 650px;
+    bottom: 200px;
+    right: 100px;
+  }
+
+  .ball {
+    background-color: black;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+  }
