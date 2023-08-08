@@ -21,9 +21,9 @@ function Run() {
   let img = document.getElementById('PacMan');
   let imgWidth = img.width;
   focus = (focus + 1) % 2;
-  direction = checkPageBounds(direction, imgWidth, pos, null);
+  direction = checkPageBounds(direction, imgWidth, pos,pageWidth);
   img.src = pacArray[direction][focus];
-  if (direction==1) {
+  if (direction) {
     pos -= 20;
     img.style.left = pos + 'px';
   } else {
@@ -39,7 +39,6 @@ setInterval(function() {Run()}, 300);
 
 // This function determines the direction of PacMan based on screen edge detection. 
 function checkPageBounds(direction, imgWidth, pos, pageWidth) {
-  pageWidth = window.innerWidth;
         if (direction == 0 && pos + imgWidth > pageWidth) direction = 1;
         if (direction == 1 && pos < 650)direction = 0;
   
