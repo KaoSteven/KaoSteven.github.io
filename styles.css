@@ -3,6 +3,9 @@ a{
   font: bold;
   background-color: yellow;
 }
+.navbar-brand{
+  color:goldenrod
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
